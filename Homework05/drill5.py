@@ -4,9 +4,7 @@ import turtle
 
 turtle.shape('turtle')
 turtle.stamp()
-5
-def W_move()
-SyntaxError: expected ':'
+
 def W_move():
     turtle.setheading(90)
     turtle.forward(50)
@@ -17,7 +15,6 @@ def A_move():
     turtle.forward(50)
     turtle.stamp()
 
-    
 def S_move():
     turtle.setheading(270)
     turtle.forward(50)
@@ -34,16 +31,8 @@ def restart():
 turtle.onkey(restart, 'Escape')
 turtle.onkey(W_move, 'w')
 turtle.onkey(S_move, 's')
-turtle.onkey(a_move, 'a')
-Traceback (most recent call last):
-  File "<pyshell#31>", line 1, in <module>
-    turtle.onkey(a_move, 'a')
-NameError: name 'a_move' is not defined. Did you mean: 'A_move'?
 turtle.onkey(A_move, 'a')
 turtle.onkey(D_move, 'd')
-tutle.listen()
-Traceback (most recent call last):
-  File "<pyshell#34>", line 1, in <module>
-    tutle.listen()
-NameError: name 'tutle' is not defined. Did you mean: 'turtle'?
 turtle.listen()
+
+
