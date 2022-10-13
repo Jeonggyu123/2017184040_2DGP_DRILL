@@ -74,7 +74,7 @@ while running:
     if ax-x<0:          # frame (0,0), (0, 100), (0, 200), (0, 300)
         framey=0
     else :
-       framey=1
+        framey=1
     handle_events()
 
 close_canvas()
