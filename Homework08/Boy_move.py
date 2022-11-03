@@ -45,12 +45,21 @@ frame = 0
 dirX = 0
 dirY = 0
 
+framey = 0
+
 while running:
     clear_canvas()
     kpu_ground.draw(KPU_WIDTH // 2, KPU_HEIGHT // 2)
     character.clip_draw(frame * 100, 100 * 1, 100, 100, x, y)
     update_canvas()
+
     frame = (frame + 1) % 8
+    if dirX-x<0:
+        framey = 0
+    else :
+        framey = 1
+
+
     x += dirX * 5
     y += dirY * 5
     delay(0.05)
